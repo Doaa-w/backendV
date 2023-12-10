@@ -9,4 +9,5 @@ const getAllProducts=async (req,res)=>{
         res.state(500).send("some error")
     }
 }
+
 module.exports={getAllProducts}
