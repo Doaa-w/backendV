@@ -6,4 +6,4 @@ const productSchema = new Schema({
     price: Number
 })
 const Product=model('products',productSchema);
-module.exports= Product
+module.exports= Product 
