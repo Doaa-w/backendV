@@ -7,7 +7,7 @@ const app=express()
 const PORT = process.env.PORT
 
 app.use('/products', route)
-
+app.use(express.static('public'))
 app.get('/',(req,res)=>{
     res.send("it is working")
 })
