@@ -5,13 +5,13 @@ require ('dotenv').config();
 
 const app=express()
 const PORT = process.env.PORT
-
+connectDB()
 app.use('/products', route)
 
 app.get('/',(req,res)=>{
     res.send("it is working")
 })
-connectDB()
+
 app.listen(PORT , ()=>{
     console.log(`server runing ${PORT}`)
 })
